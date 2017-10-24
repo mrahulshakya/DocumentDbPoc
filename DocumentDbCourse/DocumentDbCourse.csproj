@@ -201,6 +201,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Configuration\IConfigurationReader.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -211,8 +212,8 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\DocumentDbRepository.cs" />
-    <Compile Include="Repository\DocumentDbRepositoryBase.cs" />
     <Compile Include="Repository\IDocumentDbRepository.cs" />
+    <Compile Include="Repository\RepositoryConfiguration.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
