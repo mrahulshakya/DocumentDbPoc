@@ -4,14 +4,14 @@ using System.Linq;
 
 namespace DocumentDbCourse.Configuration
 {
-    public interface IConfigurationReader<T> 
+    public interface IConfigurationReader
     {
-        T GetValue(string key);
+        T GetValue<T>(string key);
     }
 
-    public class ConfigurationReader<T> : IConfigurationReader<T>
+    public class ConfigurationReader : IConfigurationReader
     {
-        public T GetValue(string key)
+        public T GetValue<T>(string key)
         {
            try
            {
